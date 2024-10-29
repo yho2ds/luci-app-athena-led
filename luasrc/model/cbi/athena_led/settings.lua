@@ -47,6 +47,7 @@ type.rmempty = false
 type:value("date", translate("Display Type Date"))
 type:value("time", translate("Display Type Time"))
 type:value("timeBlink", translate("Display Type Time Blink"))
+type:value("temp", translate("Display Type temp"))
 type:value("string", translate("Display Type String"))
 type:value("getByUrl", translate("Display Type getByUrl"))
 type.description = translate("Specify comma-separated values for option")
@@ -62,6 +63,18 @@ url.default = "http://www.baidu.com"
 url.rmempty = false
 url.placeholder = translate("Enter your api url here")
 url.description = translate("api url for get content des")
+
+tempFlag = s:option(MultiValue, "tempFlag", translate("tempFlag"))
+tempFlag.default = "4"
+tempFlag.rmempty = false
+tempFlag:value("0", translate("nss-top"))
+tempFlag:value("1", translate("nss"))
+tempFlag:value("2", translate("wcss-phya0"))
+tempFlag:value("3", translate("wcss-phya1"))
+tempFlag:value("4", translate("cpu"))
+tempFlag:value("5", translate("lpass"))
+tempFlag:value("6", translate("ddrss"))
+tempFlag.description = translate("Set the item display on the LED screen, Only effective on 'Display Type temp'")
 
 function m.on_after_commit(self)
     local output = luci.util.exec("/etc/init.d/athena_led reload >/dev/null 2>&1")

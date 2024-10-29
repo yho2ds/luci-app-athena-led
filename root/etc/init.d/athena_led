@@ -21,9 +21,11 @@ start_service() {
   config_get lightLevel $cfg 'lightLevel' '5'
   config_get option $cfg 'option' 'date timeBlink'
   config_get value $cfg 'value' 'abcdefghijklmnopqrstuvwxyz0123456789+-*/=.:：℃'
+  config_get url $cfg 'url' 'https://www.baidu.com'
+  config_get tempFlag $cfg 'tempFlag' '4'
 
   procd_open_instance
-  procd_set_param command $PROG -status "${status}" -seconds "${seconds}" -lightLevel "${lightLevel}" -option "${option}" -value "${value}"
+  procd_set_param command $PROG -status "${status}" -seconds "${seconds}" -lightLevel "${lightLevel}" -option "${option}" -value "${value}" -tempFlag "${tempFlag}"
   procd_set_param respawn
   procd_close_instance
 

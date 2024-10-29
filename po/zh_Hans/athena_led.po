@@ -10,11 +10,11 @@ msgstr "设置"
 msgid "Gift"
 msgstr "赞赏"
 
-msgid "Athena led Ctrl"
-msgstr "雅典娜 led 屏幕控制"
+msgid "Athena LED Ctrl"
+msgstr "雅典娜 LED 屏幕控制"
 
-msgid "JDC AX6600 LED Screen Ctrl"
-msgstr "京东云 ax6600 led 屏幕控制"
+msgid "JDCloud AX6600 LED Screen Ctrl"
+msgstr "京东云 AX6600 LED 屏幕控制"
 
 msgid "Enabled"
 msgstr "启用"
@@ -62,6 +62,9 @@ msgstr "时间"
 msgid "Display Type Time Blink"
 msgstr "时间-闪烁"
 
+msgid "Display Type temp"
+msgstr "温度"
+
 msgid "Display Type String"
 msgstr "自定义文本"
 
@@ -92,3 +95,30 @@ msgstr "通过 http/get 请求获取显示内容,选中'远程文本'显示模�
 
 msgid "All features are free, and tipping is just to buy me a coffee."
 msgstr "所有功能都免费，打赏只是为了请我喝咖啡"
+
+msgid "tempFlag"
+msgstr "温度选项"
+
+msgid "nss-top"
+msgstr "网络子系统nss-top"
+
+msgid "nss"
+msgstr "网络子系统nss"
+
+msgid "wcss-phya0"
+msgstr "无线控制子系统-物理0"
+
+msgid "wcss-phya1"
+msgstr "无线控制子系统-物理1"
+
+msgid "cpu"
+msgstr "中央处理器cpu"
+
+msgid "lpass"
+msgstr "lpass"
+
+msgid "ddrss"
+msgstr "内存子系统ddr"
+
+msgid "Set the item display on the LED screen, Only effective on 'Display Type temp'"
+msgstr "设置显示在led屏幕上的温度,选中'温度'显示模式生效"
