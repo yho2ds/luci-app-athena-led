@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-athena-led
 PKG_DEPENDS:=
-PKG_VERSION:=0.0.6
+PKG_VERSION:=0.0.7
 PKG_RELEASE:=20241029
 
 LUCI_TITLE:=LuCI Support for athena-led
