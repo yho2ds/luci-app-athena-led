@@ -6,7 +6,6 @@ function index()
     end
     entry({ "admin", "system", "athena_led" }, firstchild(), _("Athena LED Ctrl"), 80).dependent = false
     entry({ "admin", "system", "athena_led", "general" }, cbi("athena_led/settings"), _("Base Setting"), 1)
-    entry({ "admin", "system", "athena_led", "gift" }, template("athena_led/athena_led_gift"), _("Gift"), 2)
 
     entry({ "admin", "system", "athena_led", "status" }, call("act_status"))
 end
