@@ -1,7 +1,7 @@
 # luci-app-athena-led
 jdCloud ax6600 led screen ctrl
 
-定时关闭开启代码
+#### 定时关闭开启代码
 
 ```
 # 早上9点30开启显示
