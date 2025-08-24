@@ -20,12 +20,17 @@ define Package/$(PKG_NAME)/description
   LuCI support for athenaLed
 endef
 
-
 define Package/$(PKG_NAME)/install
   $(INSTALL_DIR) $(1)/usr/lib/lua/luci
-  cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
+  cp -R ./luasrc/* $(1)/usr/lib/lua/luci
+  $(INSTALL_DIR) $(1)/usr/sbin
+  cp ./files/usr/sbin/athena-led $(1)/usr/sbin/athena-led
+  chmod 0755 $(1)/usr/sbin/athena-led
+  $(INSTALL_DIR) $(1)/etc/init.d
+  cp ./files/etc/init.d/athena_led $(1)/etc/init.d/athena_led
+  chmod 0755 $(1)/etc/init.d/athena_led
   $(INSTALL_DIR) $(1)/
-  cp -pR ./root/* $(1)/
+  cp -R ./root/* $(1)/
 endef
 
 define Package/$(PKG_NAME)/postinst
